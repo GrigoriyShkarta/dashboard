@@ -1,0 +1,22 @@
+$smallWidthCard: 304px;
+$smallHeightCard: 208px;
+
+@mixin card {
+  background-color: #FFFFFF;
+  padding: 24px 24px 0;
+  border-radius: 16px;
+}
+
+@mixin headerCard {
+  display: flex;
+  justify-content: space-between;
+
+  h2 {
+    font-size: 20px;
+  }
+
+  svg {
+    cursor: pointer;
+  }
+}
+

@@ -1,0 +1,66 @@
+@import "../../../../assets/styles/vars";
+
+.wrapper {
+  @include card;
+  width: $smallWidthCard;
+  height: $smallHeightCard;
+  position: relative;
+}
+
+.header {
+  @include headerCard;
+}
+
+.body {
+  background: url("../../../../assets/imgs/rlqPaper.png");
+  background-repeat: no-repeat;
+  height: 150px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  border-radius: 0 0 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.waves {
+  width: 100%;
+  height: 24px;
+}
+
+.footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  background-color: #F18C5C;
+  padding: 12px 24px 16px;
+  border-radius: 0 0 16px 16px;
+
+  &__value {
+    font-weight: 700;
+    font-size: 24px;
+    color: #FFFFFF;
+
+    span {
+      font-size: 14px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    gap: 4px;
+
+    svg {
+      path {
+        stroke: #FFFFFF;
+      }
+    }
+  }
+
+  &__info_value {
+    color: #FFFFFF;
+    font-size: 14px;
+  }
+}
