@@ -1,0 +1,39 @@
+@import "../../../../assets/styles/vars";
+
+.wrapper {
+  @include card;
+  width: $smallWidthCard;
+  height: $smallHeightCard;
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+}
+
+.header {
+  @include headerCard;
+}
+
+.body {
+  overflow-y: scroll;
+}
+
+.topic {
+  padding: 16px 0;
+  display: flex;
+  gap: 9px;
+  border-top: 1px solid $borderWhite;
+
+  &__text {
+    color: $textGray;
+    font-size: 14px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D0D6E4;
+  border-radius: 8px;
+}

@@ -1,10 +1,25 @@
+$white: #FFFFFF;
+$borderWhite: #EFF2F5;
+$orange: #F18C5C;
+$textGray: #616E85;
+
 $smallWidthCard: 304px;
+$largeWidthCard: 640px;
 $smallHeightCard: 208px;
+$largeHeightCard: 292px;
 
 @mixin card {
   background-color: #FFFFFF;
   padding: 24px 24px 0;
   border-radius: 16px;
+
+  @media (max-width: 1024px) {
+    flex: 1 1 calc(50% - 8px);
+  }
+
+  @media (max-width: 480px) {
+    flex: 100%;
+  }
 }
 
 @mixin headerCard {
@@ -18,5 +33,12 @@ $smallHeightCard: 208px;
   svg {
     cursor: pointer;
   }
+}
+
+@mixin bodyContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 

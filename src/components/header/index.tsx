@@ -1,7 +1,7 @@
 import { FC, useState } from 'react';
-import s from './style.module.scss';
 import { SvgCompareIcon, SvgEmployeesIcon, SvgManagersIcon } from '../../assets/icons';
 import { NavItem } from '../../assets/const';
+import s from './style.module.scss';
 
 const Header: FC = () => {
 	const [activeItem, setActiveItem] = useState<NavItem>(NavItem.Managers);
@@ -25,7 +25,7 @@ const Header: FC = () => {
 						className={`${s.menu__item} ${activeItem === NavItem.Managers && s.menu__active}`}
 						onClick={() => setActiveItem(NavItem.Managers)}
 					>
-						<SvgManagersIcon /> {NavItem.Compare}
+						<SvgManagersIcon /> {NavItem.Managers}
 					</li>
 					<li
 						className={`${s.menu__item} ${activeItem === NavItem.Employees && s.menu__active}`}

@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { SvgEmployeesIcon, SvgInfoIcon } from '../../../../assets/icons';
-import waves from '../../../../assets/imgs/waves.png';
+import waves from '../../../../assets/imgs/waves.webp';
 import s from './style.module.scss';
 
 const RLQ: FC = () => {
@@ -11,6 +11,10 @@ const RLQ: FC = () => {
 				<SvgInfoIcon />
 			</div>
 			<div className={s.body}>
+				<hr className={s.line_1} />
+				<hr className={s.line_2} />
+				<hr className={s.line_3} />
+				<hr className={s.line_4} />
 				<img className={s.waves} src={waves} alt="waves" />
 				<div className={s.footer}>
 					<p className={s.footer__value}>

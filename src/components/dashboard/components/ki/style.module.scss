@@ -1,0 +1,20 @@
+@import "../../../../assets/styles/vars";
+
+.wrapper {
+  @include card;
+  width: $smallWidthCard;
+  height: $smallHeightCard;
+}
+
+.header {
+  @include headerCard;
+}
+
+.body {
+  @include bodyContainer;
+}
+
+.chart {
+  width: 132px;
+  height: 132px;
+}
