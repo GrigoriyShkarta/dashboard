@@ -1,7 +1,11 @@
 import { FC, SVGProps } from 'react';
+// @ts-ignore
 import compare from './compare.svg?react';
+// @ts-ignore
 import employees from './employees.svg?react';
+// @ts-ignore
 import managers from './managers.svg?react';
+// @ts-ignore
 import info from './info.svg?react';
 
 export const SvgCompareIcon: FC<SVGProps<SVGElement>> = compare;

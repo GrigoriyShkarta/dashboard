@@ -32,7 +32,7 @@ const SurveyTopicsScore: FC = () => {
 				},
 			},
 			x: {
-				type: 'category',
+				type: 'category' as const,
 				ticks: {
 					autoSkip: false,
 				},
