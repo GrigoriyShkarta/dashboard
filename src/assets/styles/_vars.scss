@@ -2,6 +2,7 @@ $white: #FFFFFF;
 $borderWhite: #EFF2F5;
 $orange: #F18C5C;
 $textGray: #616E85;
+$blackText: #222531;
 
 $smallWidthCard: 304px;
 $largeWidthCard: 640px;
@@ -12,6 +13,7 @@ $largeHeightCard: 292px;
   background-color: #FFFFFF;
   padding: 24px 24px 0;
   border-radius: 16px;
+  box-shadow: 0 8px 24px 0 #5155C314;
 
   @media (max-width: 1024px) {
     flex: 1 1 calc(50% - 8px);
@@ -28,6 +30,7 @@ $largeHeightCard: 292px;
 
   h2 {
     font-size: 20px;
+    color: $blackText
   }
 
   svg {
