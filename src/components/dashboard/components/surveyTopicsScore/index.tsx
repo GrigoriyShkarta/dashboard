@@ -11,7 +11,6 @@ const SurveyTopicsScore: FC = () => {
 		labels: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L'],
 		datasets: [
 			{
-				label: 'Values',
 				data: [4.5, 2, 5, 1, 5, 3.5, 4.2, 1, 1.8, 2.3, 0.5, 5],
 				backgroundColor: '#F18C5C',
 				borderColor: '#F18C5C',
@@ -33,6 +32,10 @@ const SurveyTopicsScore: FC = () => {
 				},
 			},
 			x: {
+				type: 'category',
+				ticks: {
+					autoSkip: false,
+				},
 				categoryPercentage: 0.8,
 				barPercentage: 0.9,
 			},

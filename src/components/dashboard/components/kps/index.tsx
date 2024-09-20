@@ -62,14 +62,13 @@ const KPS: FC = () => {
 				max: 100,
 				ticks: {
 					stepSize: 25,
-					callback: (value) => `${value}%`,
 				},
 			},
 		},
 		plugins: {
 			legend: {
 				display: true,
-				position: 'bottom',
+				position: 'bottom' as const,
 				labels: {
 					boxWidth: 12,
 				},
