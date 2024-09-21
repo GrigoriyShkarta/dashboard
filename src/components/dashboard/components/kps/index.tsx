@@ -15,14 +15,16 @@ const KPS: FC = () => {
 				data: [75, null, null, null, null, null],
 				backgroundColor: '#4D5ABF',
 				borderRadius: 6,
+				hitRadius: 4,
 				// barThickness: 76,
 			},
 			{
 				label: 'KP 2',
-				data: [null, 65, null, null, null, 35],
+				data: [null, 65, null, null, null, null],
 				backgroundColor: '#5D78C3',
 				borderRadius: 6,
-				// barThickness: 76,
+				// barThickness: -50,
+				offset: 25,
 			},
 			{
 				label: 'KP 3',
